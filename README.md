@@ -1,6 +1,8 @@
 Mailhog
 =========
 
+[![Build Status](https://travis-ci.org/ndench/ansible-role-mailhog.svg?branch=master)](https://travis-ci.org/ndench/ansible-role-mailhog)
+
 Ansible role to install [Mailhog](https://github.com/mailhog/MailHog) as a Systemd service.
 
 Requirements
