@@ -36,8 +36,10 @@ script:
   # Run the role/playbook with ansible-playbook.
   - ansible-playbook -i tests/inventory tests/test.yml -vvv
 
-  - sudo systemd is-active mailhog
+  - sudo systemd status mailhog
 
   # check mailhog is listening
   - curl localhost:8025
 
+notifications:
+    webhooks: https://galaxy.ansible.com/api/v1/notifications/
