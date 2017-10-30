@@ -1,2 +1,2 @@
 ---
-- { include: install.yml, become: yes, tags: ['mailhog', 'mailhog:install'] }
+- { import_tasks: install.yml, become: yes, tags: ['mailhog', 'mailhog:install'] }
