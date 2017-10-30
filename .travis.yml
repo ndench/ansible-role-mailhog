@@ -9,11 +9,6 @@ python: "3.6"
 env:
   - ANSIBLE_VERSION=latest
   - ANSIBLE_VERSION=2.4
-  - ANSIBLE_VERSION=2.3
-  - ANSIBLE_VERSION=2.2
-  - ANSIBLE_VERSION=2.1
-  - ANSIBLE_VERSION=2.0
-  - ANSIBLE_VERSION=1.9
 
 branches:
   only:
