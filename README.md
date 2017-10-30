@@ -1,12 +1,12 @@
 Mailhog
 =========
 
-Ansible role to install [Mailhog](https://github.com/mailhog/MailHog) as a systemd service.
+Ansible role to install [Mailhog](https://github.com/mailhog/MailHog) as a Systemd service.
 
 Requirements
 ------------
 
-None.
+* Systemd
 
 Role Variables
 --------------
