@@ -27,8 +27,7 @@ install:
   - if [ "$ANSIBLE_VERSION" = "latest" ]; then pip install ansible; else pip install ansible==$ANSIBLE_VERSION; fi
   - if [ "$ANSIBLE_VERSION" = "latest" ]; then pip install ansible-lint; fi
 
-  - sudo apt-get remove upstart -qq
-  - sudo apt-get install systemd dbus -qq
+  - sudo apt-get install systemd -qq
 
 script:
   # Check the role/playbook's syntax.
@@ -36,9 +35,6 @@ script:
 
   # Run the role/playbook with ansible-playbook.
   - ansible-playbook -i tests/inventory tests/test.yml -vvv
-
-  # check the service is running
-  - systemctl status mailhog
 
   # check mailhog is listening
   - curl localhost:8025
