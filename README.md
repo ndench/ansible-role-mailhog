@@ -13,7 +13,7 @@ Requirements
 Role Variables
 --------------
 
-All variables are listed below, along with their default values in <defaults/main.yml>:
+All variables are listed below, along with their default values in [defaults/main.yml](defaults/main.yml):
 
 ```yaml
 ndench_mailhog:
